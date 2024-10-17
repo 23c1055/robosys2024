@@ -1,4 +1,11 @@
 #!/usr/bin/python3
 import sys
 
-print("kijoh")
+ans  = 0
+for line in sys.stdin:
+    try:
+        ans += int(line)
+    except:
+        ans +=float(line)
+
+print(ans)
