@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-#SPDX-FileCopyrightText: 2024 Shingo Goto
+# SPDX-FileCopyrightText: 2024 Shingo Goto
+# SPDX-License-Identifer: BSD-3-clause
 import sys
 
 def tonum(s):
