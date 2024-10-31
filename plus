@@ -1,0 +1,13 @@
+#!/bin/bash
+
+ng () {
+       echo ${1} is defferent
+       res=1
+}
+
+res=0
+a=Yamada
+[ "$a" = Umada ] || ng "$LINENO"
+[ "$a" = Yamada ] || ng "$LINENO"
+
+exit $res
