@@ -1,7 +1,17 @@
 #!/bin/bash
 
-a=山田
-[ "$a" = 上田 ]
-echo $?
-[ "$a" = 山田 ]
-echo $?
+ng () {
+       echo ${1} is deferent line
+       res=1
+}
+
+res=0
+
+out=$(seq 5 | ./plus)
+[ "${out}" = 15 ] || ng "$LINENO"
+
+["${res}" = 0 ] && echo OK
+exit $res
+
+
+
