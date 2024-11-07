@@ -1,0 +1,7 @@
+#!/bin/bash
+  
+ng () {
+       echo ${1} are defferent
+}
+
+ng 21234567890
